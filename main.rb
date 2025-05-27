@@ -30,6 +30,6 @@ list.append('turtle')
 puts list
 
 list.insert_at('foxhound', 6)
-list.remove_at(6)
+list.remove_at(3)
 
 puts list
