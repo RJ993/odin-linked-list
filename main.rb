@@ -27,9 +27,9 @@ list.append('turtle')
 #puts list.contains?('turtle')
 #puts list.find('parrot')
 
-puts list
+#puts list
 
-list.insert_at('foxhound', 6)
-list.remove_at(3)
+#list.insert_at('foxhound', 6)
+#list.remove_at(3)
 
-puts list
+#puts list
