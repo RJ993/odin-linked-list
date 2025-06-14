@@ -10,21 +10,17 @@ class LinkedList
   end
 
   def append(value)
-    if @head_node.nil? && !@tail_node.nil?
-      @head_node = Node.new(@tail_node.value)
+    if !@head_node.nil? && @tail_node.nil?
       @tail_node = Node.new(value)
       @head_node.next_value = @tail_node
-    elsif !@head_node.nil? && @tail_node.nil?
-      @tail_node = Node.new(value)
-      @head_node.next_value = @tail_node
-    elsif !@head_node.nil?
+    elsif !@head_node.nil? && !@tail_node.nil?
       @node = @tail_node
       @tail_node = Node.new(value)
       @node.next_value = @tail_node
     end
     return unless @tail_node.nil?
 
-    @tail_node = Node.new(value)
+    @head_node = Node.new(value)
   end
 
   def prepend_list(value)
